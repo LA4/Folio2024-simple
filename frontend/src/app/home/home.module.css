@@ -38,5 +38,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    user-select: none;
+}
 
+.contactTag {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }

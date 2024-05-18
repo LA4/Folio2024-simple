@@ -1,5 +1,6 @@
 "use client";
 import { MotionConfig, motion } from "framer-motion";
+import styles from "./tag.module.css"
 
 type PropsTypetag = {
   children: React.ReactNode;
@@ -17,7 +18,7 @@ export default function Tag({ children, ...props }: PropsTypetag) {
   return (
     <>
       <a
-        style={{ display: "flex", justifyContent: "center" }}
+      className={styles.container}
         href={props.href}
         target={props.target}
       >
@@ -27,7 +28,7 @@ export default function Tag({ children, ...props }: PropsTypetag) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, ease: "linear" }}
             style={tagStyle}
-            className="tag-container"
+            className={styles.tagContainer}
             id={props.id}
           >
             {children}

@@ -1,0 +1,10 @@
+.pokeball {
+    display: flex;
+    mix-blend-mode: ovelay;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pokeball:hover {
+    transform: scale(1.1) rotate(-2deg);
+}

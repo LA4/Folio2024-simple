@@ -15,37 +15,34 @@ export default function Home() {
             className={styles.containerHome}
           >
             <h1 className={styles.homeTitle}>Andreotti Ludovic</h1>
-            <p>Décrouvrez mon univers à travers ce site internet </p>
+            <p style={{userSelect:"none"}}>Décrouvrez mon univers à travers ce site internet </p>
           </motion.div>
         </MotionConfig>
-        <span className="contact-tags">
-          <Tag href="https://github.com/LA4" target="_blank" width="80px">
+        <span className={styles.contactTag}>
+          <Tag href="https://github.com/LA4" target="_blank" >
             GitHub
           </Tag>
           <Tag
             href="https://www.linkedin.com/in/andreotti-ludovic-090011197"
             target="_blank"
-            width="80px"
           >
             Linkedin
           </Tag>
           <Tag
             href="https://www.instagram.com/ludoandr4rt"
             target="_blank"
-            width="100px"
           >
             Instagram
           </Tag>
           <Tag
             href="https://ludraw.artstation.com/"
             target="_blank"
-            width="120px"
           >
             Art Station
           </Tag>
         </span>
       </div>
-      <img className={styles.background} src="/images/bg-home.jpg" alt="" />
+      <img className={styles.background} src="/images/bg-home.jpg" alt="Image de pokeballs faites en 3d part Andreotti ludovic" />
     </>
   );
 }
