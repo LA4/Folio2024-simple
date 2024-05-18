@@ -15,7 +15,7 @@ export default function Home() {
             className={styles.containerHome}
           >
             <h1 className={styles.homeTitle}>Andreotti Ludovic</h1>
-            <p style={{userSelect:"none"}}>Décrouvrez mon univers à travers ce site internet </p>
+            <p style={{ userSelect: "none" }}>Décrouvrez mon univers à travers ces sites internet </p>
           </motion.div>
         </MotionConfig>
         <span className={styles.contactTag}>

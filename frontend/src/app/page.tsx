@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import styles from "./page.module.css"
 import Pokeball from "../../components/pokeball/Pokeball"
 import { motion } from "framer-motion"
@@ -38,9 +38,12 @@ export default function Home() {
     !state && setMessage('')
   }
   return <div className={styles.main}>
-    {message && <motion.div initial={{ opacity: 0, y: -50, x: 20 }}
-      animate={{ opacity: 1, y: 0, x: 0 }}
-      transition={{ duration: 0.2 }} style={{ justifyContent: messagePlace }} className={styles.modal}> {message}</motion.div>}
+
+    {message && <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      style={{ justifyContent: messagePlace }} className={styles.modal}> {message}</motion.div>}
     <div className={styles.containerPokeball}>
       {pokeballs.map((e, i) => {
         return <Pokeball
@@ -49,6 +52,7 @@ export default function Home() {
           handleClickPokeball={handleClickPokeball}
           src={e}
           key={i}
+          delay={i}
         ></Pokeball>
       })}
     </div>

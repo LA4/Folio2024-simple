@@ -22,6 +22,11 @@
   font-weight: 800;
 }
 
+@font-face {
+  font-family: "Pokemon";
+  src: url("../../public/PokemonSolid.ttf");
+}
+
 :root {
   font-family: "Poppin", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -107,13 +112,14 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px solid -webkit-focus-ring-color;
-  outline-color: var(--blackblue);
+  outline-color: var(--white);
 }
 
 ol,
 ul {
   list-style: none;
 }
+p{margin: 0;padding:0}
 
 @media (prefers-color-scheme: light) {
   :root {
