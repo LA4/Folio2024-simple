@@ -5,7 +5,7 @@ import Pokeball from "../../components/pokeball/Pokeball"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 
-export default function Home() {
+export default function HeroPage() {
 
   const [message, setMessage] = useState<string>('')
   const [messagePlace, setMessagePlace] = useState<string>('')

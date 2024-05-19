@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import styles from "./illustration.module.css"
 import { IMAGES } from "./imagesIllustration";
 import { useState } from "react";
-export default function Illustration() {
+export default function IllustrationPage() {
   const [actualPicture, setActualPicture] = useState<number>(0);
   const [nextPicture, setNextPicture] = useState<number>(1);
   const nextImg = (): void => {

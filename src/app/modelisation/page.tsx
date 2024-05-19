@@ -3,7 +3,7 @@ import styles from "./modelisation.module.css"
 import { IMAGES } from "./images";
 import Pik from "../../../components/picture/Pik";
 
-export default function Illustration() {
+export default function ModelisationPage() {
     const images = IMAGES
 
     return (

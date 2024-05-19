@@ -3,7 +3,7 @@ import Tag from "../../../components/tags/Tag";
 import { MotionConfig, motion } from "framer-motion";
 import styles from "./home.module.css";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <div className={styles.container}>
