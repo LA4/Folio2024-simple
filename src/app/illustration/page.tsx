@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./illustration.module.css"
-import { IMAGES } from "./images";
+import { IMAGES } from "./imagesIllustration";
 import { useState } from "react";
 export default function Illustration() {
   const [actualPicture, setActualPicture] = useState<number>(0);
