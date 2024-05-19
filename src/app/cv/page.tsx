@@ -2,13 +2,14 @@
 import React from 'react'
 import styles from "./cv.module.css"
 import { motion } from 'framer-motion'
+import Cv from './cv'
 export default function page() {
     return (
         <div className={styles.container}>
+            {/* <h2 className={styles.title}>Andreotti Ludovic</h2>
 
             <div className={styles.containerHeader}>
 
-                <h2 className={styles.title}>Andreotti Ludovic</h2>
                 <p>
                     06 42 53 39 59
                 </p>
@@ -44,7 +45,8 @@ export default function page() {
             <section className={styles.pointOfInterest}>
                 <p>Centre d'intéret</p>
                 <p>illutration - digital painting - vtt - randonnées - découvrir de vieux villages - eSport - musique - dévellopement web</p>
-            </section>
+            </section> */}
+            <Cv></Cv>
         </div>
     )
 }

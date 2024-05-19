@@ -1,7 +1,8 @@
+
 import Link from 'next/link'
-import React from 'react'
 import styles from './menu.module.css'
 export default function ({ children, }: Readonly<{ children: React.ReactNode; }>) {
+
     return (
         <div style={{ display: "flex", flexDirection: "column" }}>
             <div className={styles.container}>

@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 
 export default function Home() {
+
   const [message, setMessage] = useState<string>('')
   const [messagePlace, setMessagePlace] = useState<string>('')
   const router = useRouter()
@@ -13,12 +14,12 @@ export default function Home() {
   const pokeballs: string[] = ["/images/pokeball-green.png", "/images/pokeball-blue.png", "/images/pokeball-red.png"]
   const handleHoverPokeball = (property: string) => {
     if (property === "/images/pokeball-green.png") {
-      setMessage("Si vous désirez visiter mon portefolio, choisisez moi !")
+      setMessage("Vous désirez visiter mon portefolio ? choisisez moi !")
       setMessagePlace("flex-end")
       return
     }
     if (property === "/images/pokeball-blue.png") {
-      setMessage("Vous cherchez les liens de mes réseaux soxiaux ? Choisisez moi !")
+      setMessage("Vous cherchez les liens de mes réseaux sociaux ? Choisisez moi !")
 
       setMessagePlace("center")
       return
@@ -30,8 +31,8 @@ export default function Home() {
     }
   }
   const handleClickPokeball = (property: string) => {
-    property === "/images/pokeball-green.png" && router.push("/home")
-    property === "/images/pokeball-blue.png" && router.push("/illustration")
+    property === "/images/pokeball-green.png" && router.push("/modelisation")
+    property === "/images/pokeball-blue.png" && router.push("/home")
     property === "/images/pokeball-red.png" && router.push("/cv")
   }
   const handleLeavePokeball = (state: boolean) => {
@@ -40,9 +41,9 @@ export default function Home() {
   return <div className={styles.main}>
 
     {message && <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
       style={{ justifyContent: messagePlace }} className={styles.modal}> {message}</motion.div>}
     <div className={styles.containerPokeball}>
       {pokeballs.map((e, i) => {

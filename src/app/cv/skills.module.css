@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.3rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.titleSkill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  border: 2px solid var(--main);
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.titleSkill:hover {
+  background-color: var(--second);
+  color: var(--black);
+}
+.containetItem{
+  display: flex;
+  flex-direction: column;
+  padding-left:1rem ;
+}
+.items{
+  display: flex;
+  text-align: left;
+}
+.dates{
+  display: flex;
+  color: var(--main);
+  font-weight: 800;
+}

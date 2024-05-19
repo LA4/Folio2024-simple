@@ -1,0 +1,21 @@
+.containerParagraph {
+    display: flex;
+    justify-content: flex-end;
+    text-align: justify;
+    width: calc(100% - 20px);
+    max-width: 500px;
+    font-size: 1rem;
+    padding: clamp(0.4rem, 1rem, 4rem);
+    border-radius: 1rem;
+    border: 2px solid var(--main);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .containerParagraph:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  @media screen and (max-width: 400px) {
+    .containerParagraph {
+      font-size: 0.6rem;
+    }
+  }
