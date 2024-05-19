@@ -1,12 +1,13 @@
 'use client'
-// import "./illustration.css";
+
 import { AnimatePresence, motion } from "framer-motion";
+import styles from "./illustration.module.css"
 import { IMAGES } from "./images";
 import { useState } from "react";
 export default function Illustration() {
   const [actualPicture, setActualPicture] = useState<number>(0);
   const [nextPicture, setNextPicture] = useState<number>(1);
-  const nextImg = ():void => {
+  const nextImg = (): void => {
     if (actualPicture >= IMAGES.length - 1) {
       setActualPicture(0);
     } else {
@@ -26,10 +27,11 @@ export default function Illustration() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="container-illustration"
+          className={styles.container}
         >
-          <div className="container-img-description">
-            <div className="title-illustration">
+          <div className={styles.containerImgDescription}>
+            <div className={styles.titleIllustration}>
+              <p className={styles.compteur}>{actualPicture + 1} / {IMAGES.length}</p>
               {IMAGES[actualPicture].title}
             </div>
             <motion.aside
@@ -37,11 +39,11 @@ export default function Illustration() {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -100, opacity: 0 }}
-              className="aside-description"
+              className={styles.asideDescription}
             >
               {IMAGES[actualPicture].description}
             </motion.aside>
-            <div onClick={nextImg} className="container-img">
+            <div onClick={nextImg} className={styles.containerImg}>
               <motion.img
                 key={IMAGES[nextPicture].source}
                 src={IMAGES[nextPicture].source}
@@ -49,8 +51,8 @@ export default function Illustration() {
                 animate={{ x: 0, opacity: 0.4 }}
                 exit={{ x: -100, opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.3 }}
-                className="img-back"
-                alt=""
+                className={styles.imgBack}
+                alt={IMAGES[nextPicture].description}
               />
               <AnimatePresence>
                 <motion.img
@@ -60,8 +62,8 @@ export default function Illustration() {
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: -150, opacity: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="img-front"
-                  alt=""
+                  className={styles.imgFront}
+                  alt={IMAGES[nextPicture].description}
                 />
               </AnimatePresence>
             </div>

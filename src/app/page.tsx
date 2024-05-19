@@ -31,8 +31,8 @@ export default function Home() {
   }
   const handleClickPokeball = (property: string) => {
     property === "/images/pokeball-green.png" && router.push("/home")
-    property === "/images/pokeball-blue.png" && router.push("/home")
-    property === "/images/pokeball-red.png" && router.push("/home")
+    property === "/images/pokeball-blue.png" && router.push("/illustration")
+    property === "/images/pokeball-red.png" && router.push("/cv")
   }
   const handleLeavePokeball = (state: boolean) => {
     !state && setMessage('')
