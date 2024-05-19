@@ -4,7 +4,7 @@ import styles from './picture.module.css'
 type PictureProsType = {
     source: string
 }
-export default function Picture({ source }: PictureProsType) {
+export default function Pik({ source }: PictureProsType) {
     const [dimension, setDimension] = useState<{ width: string, height: string }>({ width: "", height: "" })
     const [open, setOpen] = useState<boolean>(false)
     const handleClick = () => {

@@ -1,7 +1,7 @@
 'use client'
 import styles from "./modelisation.module.css"
 import { IMAGES } from "./images";
-import Picture from "../../../components/picture/Picture";
+import Pik from "../../../components/picture/Pik";
 
 export default function Illustration() {
     const images = IMAGES
@@ -14,7 +14,7 @@ export default function Illustration() {
             </div>
 
             <div style={{ display: "flex", flexWrap: "wrap" }}>
-                {images.map((e, i) => <Picture key={i} source={e.source} />)}
+                {images.map((e, i) => <Pik key={i} source={e.source} />)}
             </div>
 
         </div>
