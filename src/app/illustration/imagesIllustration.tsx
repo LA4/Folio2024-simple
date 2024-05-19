@@ -6,7 +6,7 @@
 export const IMAGES = [
     {
         title: "hypolove",
-        source: "/images/illustration/hypolove.jpg",
+        source: "/images/illustration/Hypolove.jpg",
         description:
             "Ce dessin représente un hypocampe, ce fut le premier dessin que j'ai créer sur le logiciel Procreate",
     },
@@ -36,37 +36,37 @@ export const IMAGES = [
     },
     {
         title: "Dream",
-        source: "/images/illustration/inktober 01.jpg",
+        source: "/images/illustration/inktober01.jpg",
         description:
             "Aussi confus et obuscure que délirant. Les rêves peuvent être source d'inspiration.",
     },
     {
         title: "Exit",
-        source: "/images/illustration/inktober 3.jpg",
+        source: "/images/illustration/inktober3.jpg",
         description:
             "S'enfuir n'est pas forcément la solution",
     },
     {
         title: "Dodge",
-        source: "/images/illustration/inktober 04.jpg",
+        source: "/images/illustration/inktober04.jpg",
         description:
             "Eviter",
     },
     {
         title: "MAp",
-        source: "/images/illustration/inktober 05.jpg",
+        source: "/images/illustration/inktober05.jpg",
         description:
             "Trouver son chemin n'est qu'une question de point de vue.",
     },
     {
         title: "Gold",
-        source: "/images/illustration/inktober 06.jpg",
+        source: "/images/illustration/inktober06.jpg",
         description:
             "Or",
     },
     {
         title: "S'élever",
-        source: "/images/illustration/inktober 13.jpg",
+        source: "/images/illustration/inktober13.jpg",
         description:
             "",
     },

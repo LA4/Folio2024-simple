@@ -21,3 +21,16 @@
     text-decoration-thickness: 3px;
     text-decoration-color: var(--main);
 }
+@media screen and (max-width: 400px) {
+    .container {
+      font-size: 0.8rem;
+    }
+    .link:hover{
+        letter-spacing: 0rem;
+        transform: scale(1.09);
+        font-weight: 400;
+        text-decoration:underline ;
+        text-decoration-thickness: 3px;
+        text-decoration-color: var(--main);
+    }
+  }
