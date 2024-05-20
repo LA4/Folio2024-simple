@@ -36,43 +36,43 @@ export const IMAGES = [
     },
     {
         title: "Dream",
-        source: "/images/illustration/inktober01.jpg",
+        source: "/images/illustration/Inktober01.jpg",
         description:
             "Aussi confus et obuscure que délirant. Les rêves peuvent être source d'inspiration.",
     },
     {
         title: "Exit",
-        source: "/images/illustration/inktober3.jpg",
+        source: "/images/illustration/Inktober3.jpg",
         description:
             "S'enfuir n'est pas forcément la solution",
     },
     {
         title: "Dodge",
-        source: "/images/illustration/inktober04.jpg",
+        source: "/images/illustration/Inktober04.jpg",
         description:
             "Eviter",
     },
     {
         title: "MAp",
-        source: "/images/illustration/inktober05.jpg",
+        source: "/images/illustration/Inktober05.jpg",
         description:
             "Trouver son chemin n'est qu'une question de point de vue.",
     },
     {
         title: "Gold",
-        source: "/images/illustration/inktober06.jpg",
+        source: "/images/illustration/Inktober06.jpg",
         description:
             "Or",
     },
     {
         title: "S'élever",
-        source: "/images/illustration/inktober13.jpg",
+        source: "/images/illustration/Inktober13.jpg",
         description:
             "",
     },
     {
         title: "Castel",
-        source: "/images/illustration/inktober14.jpg",
+        source: "/images/illustration/Inktober14.jpg",
         description:
             "Chateau",
     },
