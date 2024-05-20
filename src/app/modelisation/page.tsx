@@ -13,7 +13,7 @@ export default function ModelisationPage() {
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Wh1aKwBUFlo?si=xIL4Ybn7jmH4Et1T" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
             </div>
 
-            <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", flexWrap: "wrap",justifyContent:"center" }}>
                 {images.map((e, i) => <Pik key={i} source={e.source} />)}
             </div>
 
