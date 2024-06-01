@@ -2,7 +2,7 @@
 export const IMAGES = [
   {
     title: "Bed Room",
-    source: "/images/modelisation/bedroom_v01_.png",
+    source: "/images/modelisation/Bedroom_v01_.png",
   },
   {
     title: "Carte de visite",

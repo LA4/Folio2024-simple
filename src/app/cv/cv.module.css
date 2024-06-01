@@ -1,152 +1,160 @@
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
 }
-.containerHeader{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
-    color: var(--white);
+.containerHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  color: var(--white);
 }
-.containerHeader p{
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
+.containerHeader p {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
 }
 
-.title{
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight:800;
-    letter-spacing: -.2rem;
+.title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -0.2rem;
 }
-.containerstack{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 70vw;
-    margin: auto;
-    border-radius: 2rem;
-    background-color: white;
-    padding: 1rem;
-    gap: .5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 16px -2px inset, rgba(0, 0, 0, 0.3) 0px 2px 3px -2px inset;
+.containerstack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70vw;
+  margin: auto;
+  border-radius: 2rem;
+  background-color: white;
+  padding: 1rem;
+  gap: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 16px -2px inset,
+    rgba(0, 0, 0, 0.3) 0px 2px 3px -2px inset;
 }
 .containerstack img {
-    display: flex;
-    object-fit: contain;
+  display: flex;
+  object-fit: contain;
 }
-.persoxp{
-    display: flex;
-
+.persoxp {
+  display: flex;
 }
-.softSkill{
-    display: flex;
-    background-color: var(--main);
-    flex-wrap: wrap;
+.softSkill {
+  display: flex;
+  background-color: var(--main);
+  flex-wrap: wrap;
 }
-.pointOfInterest{display: flex;}
+.pointOfInterest {
+  display: flex;
+}
 
 /* cv  */
 .containerCv {
-    display: flex;
-    width: 100vw;
-    height: auto;
-    justify-content: center;
-    overflow-x: hidden;
-    margin-top: 2rem;
-    margin-bottom: 60px;
-  }
-  .mainCV{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    width: calc(100vw - 20vw);
-    min-height: 150px;
-  }
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  overflow-x: hidden;
+  margin-top: 2rem;
+  margin-bottom: 60px;
+}
+.mainCV {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: calc(100vw - 20vw);
+  min-height: 150px;
+}
+.headerCv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  width: 70%;
+  max-width: 960px;
+
+  border-radius: 1rem;
+  margin: 2rem 0;
+  padding: 1rem 4rem;
+  background-color: var(--main);
+  box-shadow: rgba(255, 35, 46, 0.35) 0px -30px 36px -28px inset;
+}
+.headerCv h1 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: clamp(1rem, 8vw, 4rem);
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -4px;
+}
+.headerCv h2 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: clamp(0.4rem, 4vw, 1.4rem);
+  color: var(--grey);
+}
+.headerCv h3 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: clamp(0.8rem, 5vw, 2rem);
+  color: var(--grey);
+}
+.headerCv p {
+  text-align: right;
+  color: var(--black);
+}
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.containerImgCv {
+  display: flex;
+  justify-content: center;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--black);
+  transform: translateX(-50%) scaleX(-1);
+  position: absolute;
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.containerImgCv img {
+  display: flex;
+  object-fit: cover;
+  width: 15vw;
+  height: 15vw;
+}
+.containerExperience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.expresienceTitle {
+  font-size: 1.1rem;
+  color: var(--main);
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
   .headerCv {
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     position: relative;
-    width: 70%;
+    width: 100%;
     max-width: 960px;
-  
-    border-radius: 1rem;
-    margin: 2rem 0;
-    padding: 1rem 4rem ;
-    background-color: var(--main);
-    box-shadow: rgba(255, 35, 46, 0.35) 0px -30px 36px -28px inset;
+    padding: 1rem 2rem;
   }
-  .headerCv h1 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: clamp(1rem, 8vw, 4rem);
-    color: var(--black);
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: -4px;
-  }
-  .headerCv h2 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: clamp(0.4rem, 4vw, 1.4rem);
-    color:var(--grey)
-
-
-  }
-  .headerCv h3 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: clamp(.8rem, 5vw, 2rem);
-    color:var(--grey)
-  }
-  .headerCv p {
-    text-align: right;
-    color: var(--black);
-  }
-  .skillContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .containerImgCv{
-    display: flex;
-    justify-content: center;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid var(--black);
-    transform: translateX(-50%) scaleX(-1);
-    position: absolute;
-    left: 0;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  .containerImgCv img {
-    display: flex;
-    object-fit: cover;
-    width: 15vw;
-    height: 15vw;
-  }
-  .containerExperience{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .expresienceTitle{
-    font-size: 1.1rem;
-    color: var(--main);
-    font-weight: 600;
-    text-decoration: underline;
-  }
- 
+}

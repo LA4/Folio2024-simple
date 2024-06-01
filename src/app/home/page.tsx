@@ -15,7 +15,7 @@ export default function HomePage() {
             className={styles.containerHome}
           >
             <h1 className={styles.homeTitle}>Andreotti Ludovic</h1>
-            <p style={{ userSelect: "none" }}>Décrouvrez mon univers à travers ces sites internet </p>
+            <p className={styles.homeParagraph} style={{ userSelect: "none" }}>Décrouvrez mon univers à travers ces sites internet </p>
           </motion.div>
         </MotionConfig>
         <span className={styles.contactTag}>
