@@ -42,6 +42,42 @@ export default function HomePage() {
           </Tag>
         </span>
       </div>
+      <div className={styles.projectsContainer}>
+        <div className={styles.projectItems}>
+          <Tag
+            bgColor='#827964'
+            color="white"
+            href="https://la-4-design-v2.vercel.app/"
+            target="_blank"
+          >La4-design</Tag>
+          <div>
+            Site internet static
+          </div>
+        </div>
+
+        <div className={styles.projectItems}>
+          <Tag
+            bgColor='#827964'
+            color="white"
+            href="https://drive.google.com/file/d/1Mop1NrKHN2BuCJS0UrK45KrPIpO8CeR4/view"
+            target="_blank"
+          >LifeSync</Tag>
+          <div>
+            Apllication de journaling
+          </div>
+        </div>
+        <div className={styles.projectItems}>
+          <Tag
+            bgColor='#827964'
+            color="white"
+            href="https://mymoviz-frontend-plum-six.vercel.app/"
+            target="_blank"
+          >My movie's</Tag>
+          <div>
+            Site interet permettant de voir les sorties cinémas et les notations associées
+          </div>
+        </div>
+      </div>
       <img className={styles.background} src="/images/bg-home.jpg" alt="Image de pokeballs faites en 3d part Andreotti ludovic" />
     </>
   );

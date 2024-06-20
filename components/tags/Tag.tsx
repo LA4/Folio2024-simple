@@ -14,11 +14,12 @@ export default function Tag({ children, ...props }: PropsTypetag) {
     width: props.width,
     height: props.height,
     backgroundColor: props.bgColor,
+    color: props.color,
   };
   return (
     <>
       <a
-      className={styles.container}
+        className={styles.container}
         href={props.href}
         target={props.target}
       >

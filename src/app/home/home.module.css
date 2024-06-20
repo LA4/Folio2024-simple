@@ -52,3 +52,20 @@
   text-align: center;
   padding: 2rem;
 }
+.projectsContainer{
+  display: flex;
+  max-width:100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem  ;
+  text-align: center;
+}
+.projectItems{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: rgba(0, 0, 0, 0.856);
+  padding: 1rem;
+  border-radius: 2rem;
+}
