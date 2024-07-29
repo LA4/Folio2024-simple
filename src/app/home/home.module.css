@@ -57,6 +57,7 @@
   max-width: 100vw;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 1rem;
   gap: 1rem;
   text-align: center;
@@ -64,8 +65,10 @@
 .projectItems {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 300px;
-  background-color: rgba(0, 0, 0, 0.856);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 2rem;
 }

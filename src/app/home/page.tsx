@@ -81,6 +81,10 @@ export default function HomePage() {
             La4-design
           </Tag>
           <div>Site internet static</div>
+          <img
+            style={{ width: "200px", height: "200px", objectFit: "contain" }}
+            src="/images/la4-design.com.png"
+          ></img>
         </div>
 
         <div className={styles.projectItems}>
@@ -93,6 +97,10 @@ export default function HomePage() {
             LifeSync
           </Tag>
           <div>Apllication de journaling</div>
+          <img
+            style={{ width: "200px", height: "200px", objectFit: "contain" }}
+            src="/images/lifesync.png"
+          ></img>
         </div>
         <div className={styles.projectItems}>
           <Tag
@@ -107,6 +115,10 @@ export default function HomePage() {
             Site interet permettant de voir les sorties cinémas et les notations
             associées
           </div>
+          <img
+            style={{ width: "200px", height: "200px", objectFit: "contain" }}
+            src="/images/mymovies.png"
+          ></img>
         </div>
       </div>
       <img
