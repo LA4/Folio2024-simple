@@ -15,8 +15,8 @@ export default function HomePage() {
       const windowHeight = window.innerHeight;
       const xOffset = (e.clientX - windowWidth / 2) / (windowWidth / 2);
       const yOffset = (e.clientY - windowHeight / 2) / (windowHeight / 2);
-      const rotationX = xOffset * 5;
-      const rotationY = yOffset * -8;
+      const rotationX = xOffset * 2;
+      const rotationY = yOffset * -2;
 
       setPerspectiveEffect({
         transform: `perspective(400px) rotateY(${rotationX}deg) rotateX(${rotationY}deg)`,
@@ -44,7 +44,9 @@ export default function HomePage() {
             transition={{ duration: 0.5 }}
             className={styles.containerHome}
           >
-            <h1 className={styles.homeTitle}>Andreotti Ludovic</h1>
+            <h1 style={perspectiveEffect} className={styles.homeTitle}>
+              Andreotti Ludovic
+            </h1>
             <p className={styles.homeParagraph} style={{ userSelect: "none" }}>
               Décrouvrez mon univers à travers ces sites internet{" "}
             </p>
