@@ -90,7 +90,7 @@ export default function HomePage() {
             Thread Book
           </Tag>
           <iframe
-            width="560"
+            width="100%"
             height="315"
             src="https://www.youtube.com/embed/5NBu1aPEHL8?si=fBXUCx8SUs-O76b-&amp;controls=0"
             title="YouTube video player"
