@@ -71,6 +71,32 @@ export default function HomePage() {
         </span>
       </div>
       <div className={styles.projectsContainer}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "14px",
+            backgroundColor: "rgba(0,0,0,0.8)",
+            padding: "1rem",
+            borderRadius: "14px",
+          }}
+        >
+          <Tag
+            bgColor="#827964"
+            color="white"
+            href="https://thread-book.vercel.app/"
+            target="_blank"
+          >
+            Thread Book
+          </Tag>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5NBu1aPEHL8?si=fBXUCx8SUs-O76b-&amp;controls=0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+        </div>
         <div className={styles.projectItems}>
           <Tag
             bgColor="#827964"
