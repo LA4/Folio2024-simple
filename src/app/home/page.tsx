@@ -79,6 +79,7 @@ export default function HomePage() {
             backgroundColor: "rgba(0,0,0,0.8)",
             padding: "1rem",
             borderRadius: "14px",
+            width: "100%",
           }}
         >
           <Tag
