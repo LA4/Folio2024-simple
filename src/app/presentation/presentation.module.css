@@ -1,19 +1,20 @@
 .container {
-  display: flex;
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  width: 100vw;
+  height: 100vh;
 }
 .videoPres {
   display: flex;
   max-width: 300px;
   border: 2px solid var(--second);
   border-radius: 1rem;
-  min-width: 300px;
-  height: 600px;
   object-fit: contain;
+  overflow: hidden;
 }
 .button {
   display: flex;
@@ -34,27 +35,26 @@
 .cardInfo {
   color: var(--black);
   font-weight: 600;
+  font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  align-items: center;
+  gap: 1rem;
   max-width: 300px;
-  bottom: 20%;
-  left: 10%;
   padding: 1rem;
   border-radius: 1rem;
   background-color: rgba(242, 199, 68);
   z-index: 50;
   cursor: pointer;
-  overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .closeInfo {
   display: flex;
   width: 2.2rem;
-  height: 2.2rem;
-  border-radius: 50%;
+  height: 100%;
   padding: 0.4rem;
-  font-weight: 600;
   font-size: 0.6rem;
-  align-items: center;
+  align-self: flex-start;
+  align-items: flex-start;
 }

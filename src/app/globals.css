@@ -42,8 +42,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --main: #F2C744;
-  --second: #F2D857;
+  --main: rgb(242, 199, 68);
+  --second: rgb(242, 216, 87);
   --white: #d1d1d1;
   --black: #232426;
   --grey: #3b4053;
@@ -119,7 +119,10 @@ ol,
 ul {
   list-style: none;
 }
-p{margin: 0;padding:0}
+p {
+  margin: 0;
+  padding: 0;
+}
 
 /* @media (prefers-color-scheme: light) {
   :root {
