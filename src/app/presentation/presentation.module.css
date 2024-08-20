@@ -8,7 +8,9 @@
 }
 .videoPres {
   display: flex;
-  max-width: 600px;
+  max-width: 300px;
+  border: 2px solid var(--second);
+  border-radius: 1rem;
   min-width: 300px;
   height: 600px;
   object-fit: contain;
@@ -28,4 +30,30 @@
 }
 .buttonBefore {
   left: 0;
+}
+.cardInfo {
+  color: var(--black);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  max-width: 300px;
+  bottom: 5%;
+  left: 10px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(242, 199, 68);
+  width: 70%;
+  z-index: 50;
+}
+
+.closeInfo {
+  display: flex;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  font-weight: 600;
+  font-size: 0.6rem;
+  align-items: center;
 }
