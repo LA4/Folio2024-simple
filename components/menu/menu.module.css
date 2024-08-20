@@ -1,36 +1,36 @@
-.container{
-    z-index: 50;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    padding: .5rem 50px ;
-    position: absolute;
+.container {
+  z-index: 50;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 0.5rem 50px;
+  position: absolute;
 }
-.link{
-    display: flex;
-    font-weight: 100;
-    cursor: pointer;
-    transition: .3s;
+.link {
+  display: flex;
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.link:hover{
-    letter-spacing: .3rem;
+.link:hover {
+  letter-spacing: 0.3rem;
+  transform: scale(1.09);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--main);
+}
+@media screen and (max-width: 430px) {
+  .container {
+    font-size: 0.8rem;
+  }
+  .link:hover {
+    letter-spacing: 0rem;
     transform: scale(1.09);
     font-weight: 400;
-    text-decoration:underline ;
+    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-decoration-color: var(--main);
-}
-@media screen and (max-width: 400px) {
-    .container {
-      font-size: 0.8rem;
-    }
-    .link:hover{
-        letter-spacing: 0rem;
-        transform: scale(1.09);
-        font-weight: 400;
-        text-decoration:underline ;
-        text-decoration-thickness: 3px;
-        text-decoration-color: var(--main);
-    }
   }
+}
