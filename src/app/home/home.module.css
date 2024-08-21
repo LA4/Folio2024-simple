@@ -23,9 +23,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 400px;
   width: 100vw;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .homeTitle {
@@ -46,12 +45,11 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  margin-bottom: 50px;
+  margin: 1rem;
 }
 .homeParagraph {
   display: flex;
   text-align: center;
-  padding: 2rem;
 }
 .projectsContainer {
   display: flex;
@@ -69,7 +67,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 300px;
+  max-width: 200px;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 1rem;
   border-radius: 2rem;

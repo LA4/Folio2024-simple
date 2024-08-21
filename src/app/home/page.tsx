@@ -4,6 +4,7 @@ import { MotionConfig, motion } from "framer-motion";
 import styles from "./home.module.css";
 import { transform } from "next/dist/build/swc";
 import { useEffect, useState } from "react";
+import MovieComponent from "../../../components/moviePlayer/MovieComponent";
 
 export default function HomePage() {
   const [perspectiveEffect, setPerspectiveEffect] = useState({
@@ -52,6 +53,7 @@ export default function HomePage() {
             </p>
           </motion.div>
         </MotionConfig>
+
         <span className={styles.contactTag}>
           <Tag href="https://github.com/LA4" target="_blank">
             GitHub
@@ -70,6 +72,7 @@ export default function HomePage() {
           </Tag>
         </span>
       </div>
+      <MovieComponent></MovieComponent>
       <div className={styles.projectsContainer}>
         <div
           style={{
@@ -79,7 +82,6 @@ export default function HomePage() {
             backgroundColor: "rgba(0,0,0,0.8)",
             padding: "1rem",
             borderRadius: "14px",
-            width: "100%",
           }}
         >
           <Tag
@@ -91,8 +93,8 @@ export default function HomePage() {
             Thread Book
           </Tag>
           <iframe
-            width="100%"
-            height="315"
+            width="200px"
+            height="200px"
             src="https://www.youtube.com/embed/5NBu1aPEHL8?si=fBXUCx8SUs-O76b-&amp;controls=0"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

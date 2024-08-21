@@ -10,11 +10,15 @@
 }
 .videoPres {
   display: flex;
-  max-width: 300px;
-  border: 2px solid var(--second);
+  max-width: 500px;
+  height: 500px;
+  margin-top: 70px;
+  /* border: 2px solid var(--second); */
   border-radius: 1rem;
-  object-fit: contain;
   overflow: hidden;
+}
+.videoButtonContainer {
+  position: relative;
 }
 .button {
   display: flex;
@@ -22,9 +26,10 @@
   top: 0;
   height: 100%;
   width: 60px;
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
   justify-content: center;
   align-items: center;
+  z-index: 60;
 }
 .buttonAfter {
   right: 0;
@@ -33,6 +38,10 @@
   left: 0;
 }
 .cardInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(10%);
   color: var(--black);
   font-weight: 600;
   font-size: 0.8rem;

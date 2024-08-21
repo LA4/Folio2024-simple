@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.videoPres {
+  display: flex;
+  max-width: 500px;
+  height: 500px;
+  /* border: 2px solid var(--second); */
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.videoButtonContainer {
+  position: relative;
+}
+.button {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+}
+.buttonAfter {
+  right: 0;
+}
+.buttonBefore {
+  left: 0;
+}
+.cardInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(10%);
+  color: var(--black);
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 300px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(242, 199, 68);
+  z-index: 50;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.closeInfo {
+  display: flex;
+  width: 2.2rem;
+  height: 100%;
+  padding: 0.4rem;
+  font-size: 0.6rem;
+  align-self: flex-start;
+  align-items: flex-start;
+}

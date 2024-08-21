@@ -21,6 +21,11 @@ const info = [
       quotidiennes. `,
     videoUri: "/videos/lifesync.mp4",
   },
+  {
+    title: "LA4-design",
+    descritpion: `Site web portfolio présentant les compétences et les services liées au graphisme. `,
+    videoUri: "/videos/demo-la4design.mp4",
+  },
 ];
 export default function PresentationPage() {
   const [openInfo, setOpenInfo] = useState<boolean>(false);
@@ -33,7 +38,7 @@ export default function PresentationPage() {
     if (direction === "before" && indexInfo === 0) {
       setIndexInfo(info.length - 1);
     }
-    if (direction === "after" && indexInfo === 0) {
+    if (direction === "after" && indexInfo >= 0) {
       setIndexInfo((indexInfo) => indexInfo + 1);
     }
     if (direction === "after" && indexInfo === info.length - 1) {
@@ -43,38 +48,40 @@ export default function PresentationPage() {
   return (
     <>
       <div className={styles.container}>
-        <MoviePlayer url={info[indexInfo].videoUri}></MoviePlayer>
-
-        <div className={styles.cardInfo}>
-          {openInfo ? (
-            <span>{info[indexInfo].descritpion}</span>
-          ) : (
-            <span>{info[indexInfo].title}</span>
-          )}
+        <h2>Developpement Web et mobile</h2>
+        <div className={styles.videoButtonContainer}>
           <span
-            className={styles.closeInfo}
-            onClick={() => setOpenInfo(!openInfo)}
+            onClick={() => handleIndefInfo("before")}
+            className={`${styles.button} ${styles.buttonBefore}`}
           >
-            {openInfo ? <LogoClose /> : <LogoOpen />}
+            <span style={{ transform: "rotate(-90deg)" }}>
+              <LogoOpen />
+            </span>
           </span>
-        </div>
-        <span
-          onClick={() => handleIndefInfo("before")}
-          className={`${styles.button} ${styles.buttonBefore}`}
-        >
-          <span style={{ transform: "rotate(-90deg)" }}>
-            <LogoOpen />
-          </span>
-        </span>
 
-        <span
-          onClick={() => handleIndefInfo("after")}
-          className={`${styles.button} ${styles.buttonAfter}`}
-        >
-          <span style={{ transform: "rotate(90deg)" }}>
-            <LogoOpen />
+          <span
+            onClick={() => handleIndefInfo("after")}
+            className={`${styles.button} ${styles.buttonAfter}`}
+          >
+            <span style={{ transform: "rotate(90deg)" }}>
+              <LogoOpen />
+            </span>
           </span>
-        </span>
+          <div className={styles.cardInfo}>
+            {openInfo ? (
+              <span>{info[indexInfo].descritpion}</span>
+            ) : (
+              <span>{info[indexInfo].title}</span>
+            )}
+            <span
+              className={styles.closeInfo}
+              onClick={() => setOpenInfo(!openInfo)}
+            >
+              {openInfo ? <LogoClose /> : <LogoOpen />}
+            </span>
+          </div>
+          <MoviePlayer url={info[indexInfo].videoUri}></MoviePlayer>
+        </div>
       </div>
     </>
   );
